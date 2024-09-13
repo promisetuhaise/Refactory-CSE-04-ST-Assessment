@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Flight Booking Form
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet')
+    link(rel='stylesheet' href='/css/style.css')
+    link(href='https://fonts.googleapis.com/css2?family=Abel&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap' rel='stylesheet')
+  body
+    .container
+      form#form(method='post' action='/RIM_AVA.GR/Flights' novalidate)
+        .form-container
+          img(src='/images/Header.PNG' alt='' width='900px')
+        .row
+          .col-md-4
+            .form-section
+              h3 PASSENGER INFORMATION
+              .mb-3
+                label.form-label(for='fullName') Full Name *
+                input#fullName.form-control(type='text' name='fullName' required)
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='gender') Gender *
+                select#gender.form-select(name='gender')
+                  option(value='none') -- Select --
+                  option(value='Male') Male
+                  option(value='Female') Female
+                  option(value='Other') Other
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='dob') Date of Birth *
+                input#dob.form-control(type='date' name='dateOfBirth' required)
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='nationality') Nationality *
+                input#nationality.form-control(type='text' name='nationality' required)
+                .invalid-feedback Invalid field
+          .col-md-4
+            .form-section
+              h3 CONTACT INFORMATION
+              .mb-3
+                label.form-label(for='phoneNumber') Phone Number *
+                input#phoneNumber.form-control(type='tel' name='phoneNumber' required pattern='^0\d{9}$')
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='emailAddress') Email Address 
+                input#emailAddress.form-control(type='email' name='emailAddress' required pattern='^[a-zA-Z0-9._%+-]+@gmail\.com$')
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='poBox') P.O. BOX Number
+                input#poBox.form-control(type='text' name='poBox' required pattern='^[A-Za-z\s\.]+\d{1,6}$')
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='emergencyPhone') Emergency Phone Number *
+                input#emergencyPhone.form-control(type='tel' name='emergencyPhone' required pattern='^0\d{9}$')
+                .invalid-feedback Invalid field
+          .col-md-4
+            .form-section
+              h3 FLIGHT INFORMATION
+              .mb-3
+                label.form-label(for='passportNumber') Passport Number *
+                input#passportNumber.form-control(type='text' name='passportNumber' required pattern='^[A-Z]{3}\d{4}$')
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='visaDocument') Visa Document *
+                input#visaDocument.form-control(type='file' name='visaDocument' required)
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='departureCity') Departure City *
+                input#departureCity.form-control(type='text' name='departureCity' required)
+                .invalid-feedback Invalid field
+              .mb-3
+                label.form-label(for='destinationCity') Destination City *
+                input#destinationCity.form-control(type='text' name='destinationCity' required)
+                .invalid-feedback Invalid field
+        .submit-btn
+          button.btn.btn-danger(type='submit') SUBMIT
+        
+        if success
+          .alert.alert-success
+            | Form submitted successfully!
+        if error
+          .alert.alert-danger
+            | Error while processing form submission. Please try again.
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js')
+    script(src='/js/validate.js')

@@ -1,0 +1,149 @@
+
+body {
+    font-family: Abel, sans-serif;
+    max-width: 900px;
+    background-color: white;
+    border: 1px solid white;
+  }
+
+
+  .abel-regular {
+      font-family: "Abel", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    
+    
+    h1 {
+      font-family: 'Abel', sans-serif;
+      font-size: 2.5rem;
+      text-align: left;
+      background-color: #c82020;
+      color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-weight: bolder;
+      
+  }
+
+  h3 {
+    text-align: center;
+    background-color: #b30000;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+
+ .container{
+  margin-left: 200px;
+  margin-top: 100px;
+ }
+   
+ 
+ .header-text {
+  text-align: right;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: -90px;
+  margin-right: 150px;
+  font-style: normal;
+  font-family: "Dancing Script", cursive;
+  font-weight: 10px;
+  
+  
+}
+
+.header-logo {
+  float: right;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+
+
+  .form-container {
+    align-items: center;
+    width: 900px;
+    height: auto;
+    margin-left: -10px;
+    position: absolute;
+    top:20px;
+    
+  }
+
+  .form-section {
+    border: 2px dashed #b30000;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+  }
+
+  
+
+  .invalid-feedback {
+    display: none; 
+    color: #b30000;
+  }
+
+  .btn-danger {
+    background-color: #b30000;
+    border: none;
+  }
+
+  .submit-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 0.9rem; 
+  }
+
+  .form-label {
+    margin-bottom: 0.3rem;
+  }
+
+  .form-control, .form-select {
+    margin-bottom: 0.8rem; 
+    font-size: 0.9rem;
+  }
+
+  .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-section {
+    min-height: 270px;
+  }
+
+ 
+  .btn {
+    padding: 5px 30px;
+    font-size: 0.9rem;
+  }
+
+
+  .alert-success {
+    display: block;
+    color:white;
+    background-color: #1bbc40;
+    border-color: #c3e6cb;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-danger {
+    display: block;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 0.25rem;
+  }

@@ -1,0 +1,25 @@
+{
+  "name": "tuhaise_promise",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.6.2",
+    "nodemon": "^3.1.4",
+    "passport-local-mongoose": "^8.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.3",
+    "session": "^0.1.0"
+  }
+}
